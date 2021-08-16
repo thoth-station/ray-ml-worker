@@ -1,0 +1,50 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[requires]
+# this needs to be kept in sync with ray-operator and ray notebook images
+python_version = "3.8"
+
+[packages]
+# keep this in sync with pipenv in the Containerfile
+pipenv = "==2020.11.15"
+
+# this needs to be kept in sync with ray-operator and ray notebook images
+# open question: can we work with 'ray = "*"' here?
+ray = { version = ">=1.4,<1.5", extras = [ "default" ] }
+
+# general ray deps
+cython = "*"
+flatbuffers = "*"
+
+# ray ml deps - should be kept synced with ray ml notebook images
+
+# neural net packages - going to favor ray's (py)torch native integration to start
+# this integration is not yet tested in situ so there may be some iteration on these deps
+# and gpu integrations in general will need a test-bed to develop
+torch = "*"
+
+scikit-learn = "*"
+
+# dask+ray deps
+dask = { version = "*", extras = [ "array", "dataframe" ] }
+toolz = "*"
+pandas = "*"
+scipy = "*"
+
+# xgboost+ray
+xgboost = "*"
+xgboost-ray = "*"
+
+# codeflare
+# pipfile has allow_prereleases but it is global-only, and I don't want it for most packages.
+# see: https://github.com/pypa/pipenv/issues/1760
+codeflare = "==0.1.2.dev0"
+# pickle5 needs to be explicitly installed as a codeflare dep
+pickle5 = "*"
+# ibm example dep
+lale = "*"
+
+[dev-packages]
