@@ -19,4 +19,4 @@
 
 
 __name__ = "ray-ml-worker"
-__version__ = "0.0.0"
+__version__ = "0.1.0"
