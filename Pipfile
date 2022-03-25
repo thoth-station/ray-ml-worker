@@ -13,7 +13,7 @@ pipenv = "==2020.11.15"
 
 # this needs to be kept in sync with ray-operator and ray notebook images
 # open question: can we work with 'ray = "*"' here?
-ray = { version = ">=1.4,<1.5", extras = [ "default" ] }
+ray = { version = "*", extras = [ "default" ] }
 
 # general ray deps
 cython = "*"
@@ -48,3 +48,6 @@ pickle5 = "*"
 lale = "*"
 
 [dev-packages]
+
+[pipenv]
+allow_prereleases = true
