@@ -36,7 +36,7 @@ scipy = "*"
 
 # xgboost+ray
 xgboost = "*"
-xgboost-ray = "==0.1.4"
+xgboost-ray = "*"
 
 # codeflare
 # pipfile has allow_prereleases but it is global-only, and I don't want it for most packages.
