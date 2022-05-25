@@ -24,7 +24,10 @@ flatbuffers = "*"
 # neural net packages - going to favor ray's (py)torch native integration to start
 # this integration is not yet tested in situ so there may be some iteration on these deps
 # and gpu integrations in general will need a test-bed to develop
+
 torch = "*"
+tensorflow = "==2.6.3"
+keras = "*"
 
 scikit-learn = "*"
 
