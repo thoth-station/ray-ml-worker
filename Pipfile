@@ -46,6 +46,10 @@ xgboost-ray = "*"
 tune_sklearn = "*"
 packaging = "*"
 
+# ray datafram
+"ray[data]" = "*"
+memory_profiler = "*"
+
 # codeflare
 # pipfile has allow_prereleases but it is global-only, and I don't want it for most packages.
 # see: https://github.com/pypa/pipenv/issues/1760
