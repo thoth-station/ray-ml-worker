@@ -1,5 +1,11 @@
 # Changelog for Thoth's Template GitHub Project
 
+## Release 0.2.0 (2022-06-07T18:43:12)
+
+* 578b33d add reqs for ray data
+* 6639413 add tensorflow deps to pipfiles (#21)
+* d80d00e add ray tune (#20)
+
 ## Release 0.1.2 (2022-05-15T18:43:12)
 * 0a91b5a :fire: Patch the bashrc in home dir instead of home/ray (#17)
 * e25d9c3 Updated the ray package with new features
