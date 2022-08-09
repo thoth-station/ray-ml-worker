@@ -26,6 +26,7 @@ flatbuffers = "*"
 # and gpu integrations in general will need a test-bed to develop
 
 torch = "*"
+torchvision = "*"
 tensorflow = "==2.6.3"
 keras = "*"
 
