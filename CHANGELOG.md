@@ -1,5 +1,8 @@
 # Changelog for Thoth's Template GitHub Project
 
+## Release 0.2.1 (2022-08-09T06:11:19)
+* 2fa94da update ray and torch versions (#26)
+
 ## Release 0.2.0 (2022-06-07T18:43:12)
 
 * 578b33d add reqs for ray data
