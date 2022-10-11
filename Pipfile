@@ -13,7 +13,7 @@ pipenv = "==2020.11.15"
 
 # this needs to be kept in sync with ray-operator and ray notebook images
 # open question: can we work with 'ray = "*"' here?
-ray = { version = "*", extras = [ "default" ] }
+ray = { version = "2.0.0", extras = [ "default" ] }
 
 # general ray deps
 cython = "*"
@@ -27,8 +27,6 @@ flatbuffers = "*"
 
 torch = "*"
 torchvision = "*"
-tensorflow = "==2.6.3"
-keras = "*"
 
 scikit-learn = "*"
 
